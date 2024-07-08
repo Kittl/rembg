@@ -28,5 +28,4 @@ EXPOSE 7000
 USER 1001
 
 # Define the entrypoint and default command
-ENTRYPOINT ["rembg"]
-CMD ["--help"]
+ENTRYPOINT ["rembg", "s"]
