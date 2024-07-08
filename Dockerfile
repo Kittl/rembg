@@ -21,6 +21,9 @@ RUN groupadd -g 1001 appgroup && \
     useradd -u 1001 -g appgroup -m appuser && \
     chown -R appuser:appgroup /home/appuser
 
+# Set the Numba cache directory environment variable
+ENV NUMBA_CACHE_DIR=/home/appuser/numba_cache
+
 # Expose the port the app runs on
 EXPOSE 7000
 
