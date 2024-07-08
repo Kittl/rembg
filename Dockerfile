@@ -25,7 +25,6 @@ RUN groupadd -g 1001 appgroup && \
 ENV NUMBA_CACHE_DIR=/home/appuser/numba_cache
 ENV TMPDIR=/home/appuser/tmp
 ENV GRADIO_FLAGGING_DIR=/home/appuser/flagged
-ENV XDG_CACHE_HOME=/home/appuser/pooch
 
 # Expose the port the app runs on
 EXPOSE 7000
