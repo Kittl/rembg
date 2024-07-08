@@ -24,6 +24,7 @@ RUN groupadd -g 1001 appgroup && \
 # Set the Numba cache directory environment variable
 ENV NUMBA_CACHE_DIR=/home/appuser/numba_cache
 ENV TMPDIR=/home/appuser/tmp
+ENV GRADIO_FLAGGING_DIR=/home/appuser/flagged
 
 # Expose the port the app runs on
 EXPOSE 7000
